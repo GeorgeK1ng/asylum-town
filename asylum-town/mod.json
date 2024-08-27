@@ -4,7 +4,7 @@
 	
 	"author" : "just Ben Yan, no FF team any longer. BGM in Asylum was made by Heroes Orchestra.",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.09",
+	"version" : "2.10",
 	"modType" : "Town",	
 	
     "factions" : [ "config/asylum/town" ],
@@ -74,7 +74,8 @@
 	],
 	"changelog" :
     {
-    	"2.09"	: [ "Russian translation by Anton Sergeew" ],
+    	"2.10"	: [ "Updated russian translation" ],
+		"2.09"	: [ "Russian translation by Anton Sergeew" ],
 		"2.08"	: [ "Polish translation by ToRRent1812" ],
 		"2.07"	: [ "Added the creatures' stackExp and fixed the commander" ],
 		"2.06"	: [ "Update to vcmi-1.4 format" ],
