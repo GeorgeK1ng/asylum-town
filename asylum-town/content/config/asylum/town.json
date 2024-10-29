@@ -256,6 +256,7 @@
 						"wood" : 5,
 						"gold" : 500
 					},
+					"marketModes" : ["resource-resource", "resource-player"]
 					"id" : 14
 				},
 				"resourceSilo" :
@@ -268,12 +269,14 @@
 						"gold" : 5000
 					},
 					"requires" : [ "marketplace" ],
+					"produce": { "crystal": 1},
 					"id" : 15
 				},
 				"blacksmith" :
 				{
 					"description" : "The Blacksmith provides your armies with Ammo Cart.",
 					"name" : "Blacksmith",
+					"warMachine" : "ammoCart",
 					"cost" :
 					{
 						"wood" : 5,
@@ -316,7 +319,13 @@
 				{
 					"description" :  "The Stardust Falls increases the Spellpower by +2 for heroes in a siege war.",
 					"name" : "Stardust Falls",
-					"type" : "spellPowerGarrisonBonus",
+					"bonuses": [
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": "primarySkill.spellpower",
+						"val": 2
+					}
+				],
 					"cost" : 
 					{
 						"gold" : 1000
@@ -661,7 +670,7 @@
 			},
 			"mageGuild" : 5,
 			
-			"musicTheme" : "music/factions/AsylumTown",
+			"musicTheme" : [ "music/factions/AsylumTown" ],
 			"names" : [
 				"Engardine",
 				"Millsdale",
@@ -1084,7 +1093,6 @@
 			},
 		"tavernVideo" : "TAVERN.BIK",
 		"townBackground" : "asylum/town-screen/background.bmp",
-		"warMachine" : "ammoCart",
 		"hallSlots" : [
 				[
 					[ "villageHall", "townHall", "cityHall", "capitol" ],
